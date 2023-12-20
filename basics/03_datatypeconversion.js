@@ -28,8 +28,22 @@
 
 // console.log( v)
 
-let b="Naveen"
+// let b="Naveen"
 
-let v= Boolean(b)
+// let v= Boolean(b)
 
-console.log( v)
+// console.log( v)
+
+// console.log(2**3)
+
+// operations
+
+console.log("1"+2)
+
+console.log("1"+2+2)
+
+console.log(1+2+"2")
+
+console.log(+true)
+
+console.log(+"")
