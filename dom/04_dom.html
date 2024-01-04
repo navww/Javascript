@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;  color: #fff;">
+
+    <ul class="lang">
+
+        <li>Javascript</li>
+    </ul>
+</body>
+ <script>
+     
+     function la(lang){
+
+        const li=document.createElement("li");
+
+        li.innerHTML=lang;   //`${lang}`
+
+        const a=document.querySelector(".lang");
+
+        a.appendChild(li);
+     }
+
+     la("python");
+
+     la("java");
+
+    //   optimize approach
+ 
+     function laa(lang){
+        
+        const li=document.createElement("li");
+
+        const a=document.createTextNode(lang);
+
+         li.appendChild(a);
+
+        const b=document.querySelector(".lang");
+
+        b.appendChild(li);
+
+
+     }
+
+     laa("GoLang");
+
+    //  Edit
+
+    const a=document.querySelector("li:nth-child(2)");
+
+    // a.innerHTML = "C++";
+
+    const newq=document.createElement("li");
+
+    newq.innerHTML ="C-Sharp";
+
+    a.replaceWith(newq);
+
+    const b=document.querySelector("li:first-Child");
+
+     b.outerHTML ="<li>TypeScript</li>";
+
+    //  remove
+
+    const c=document.querySelector("li:last-Child");
+
+         c.remove();
+     
+ </script>
+</html>
