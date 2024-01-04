@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+ <script>
+
+    const el=document.createElement('div');
+
+      console.log(el);
+
+      el.className ="mvp";
+
+   el.id=Math.round(Math.random()*10+1);
+
+     el.setAttribute('title','Mai hoo hero tera');
+
+     el.style.backgroundColor ="green";
+
+      el.style.padding="5px";
+
+    //   el.innerText = "Jai Shree Ram"; 
+
+    const tx=document.createTextNode('Jai shree Ram');
+
+       el.appendChild(tx);
+
+    document.body.appendChild(el);
+      
+
+ </script>
+</html>
